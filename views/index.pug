@@ -127,7 +127,7 @@ html(lang =lang)
 
 
                 .logos
-                    h3 !{infos.replace(/\n/g, "<br />")}
+                    // h3 !{infos.replace(/\n/g, "<br />")}
 
                     span=initiative
                         br
@@ -140,83 +140,74 @@ html(lang =lang)
                         br
                     span=sponsor
                         br
-                    a(href="http://www.swisslosfonds.bs.ch/",target="_blank")
-                        img.logoNoPadding(src="static/img/swisslos-bs.svg")
-                    a(href="https://www.baselland.ch/politik-und-behorden/direktionen/sicherheitsdirektion/swisslos-fonds",target="_blank")
-                        img.logoNoPadding(src="static/img/swisslos-bl.svg")
-                    a(href="https://www.cms-basel.ch/",target="_blank")
-                        img.logoNoPadding(src="static/img/cms.svg")
+                    a(href="http://www.swisslosfonds.bs.ch/",target="_blank",title="Swisslos BS")
+                        img.logoNoPadding(src="static/img/swisslos-bs.svg", alt="Logo Swisslos").logofooter  
+                    a(href="https://www.baselland.ch/politik-und-behorden/direktionen/sicherheitsdirektion/swisslos-fonds",target="_blank",title="Swisslos BL")
+                        img.logoNoPadding(src="static/img/swisslos-bl.svg", alt="Logo Swisslos BL").logofooter  
+                    a(href="https://www.cms-basel.ch/",target="_blank",title="CMS")
+                        img.logoNoPadding(src="static/img/cms.svg", alt="Logo CMS").logofooter  
+                    a(href="https://www.ernst-goehner-stiftung.ch",target="_blank",title="Ernst Göhner Stiftung")
+                        img.logoNoPadding(src="static/img/EGS_Schriftzug_2_weiss.svg", alt="Logo EGS").logofooter  
+                    a(href="https://prohelvetia.ch/",target="_blank",title="ProHelvetia")
+                        img.logoNoPadding(src="static/img/PRH_CD_RGB_white_DE_LOGO.svg", alt="Logo Prohelvetia").logofooter     
+                    a(href="https://www.mobiliar.ch/",target="_blank",title="Mobiliar")
+                        img.logoNoPadding(src="static/img/MOB_d_RGB_weiss.svg", alt="Logo Mobiliar").logofooter  
+                    a(href="https://www.kbhg.ch/",target="_blank",title="KBHG")
+                        img(src="static/img/kbhg.svg", alt="Logo KBHG").logofooter  
+                    a(href="https://www.swissuniversities.ch/",target="_blank",title="Swissuniversities")
+                        img(src="static/img/swissuniversities.svg", alt="Logo Swissuniversities").logofooter.logofooterlang
                         br
-                    a(href="https://www.mobiliar.ch/",target="_blank")
-                        img(src="static/img/MOB_d_RGB_weiss.svg")
-                    a(href="https://www.kbhg.ch/",target="_blank")
-                        img(src="static/img/kbhg.svg")
-                        br
+
+
+
                     span=kooperationspartner
                         br
-                    a(href="https://www.musik-akademie.ch/klassik/de/projekte-und-ensembles/elektronisches-studio-basel.html",target="_blank")
-                        img.logolong.logoNoPadding(src="static/img/elektronisches-studio-basel.svg")                      
-                    a(href="https://radiox.ch/",target="_blank")
-                        img.logoNoPadding(src="static/img/radio-x.svg")   
-                    a(href="https://derivative.ca/",target="_blank")
-                        img.logolong(src="static/img/touchdesigner.svg")   
+                    a(href="https://www.musik-akademie.ch/klassik/de/projekte-und-ensembles/elektronisches-studio-basel.html",target="_blank",title="Elektronisches Studio Basel")
+                        img.logoNoPadding(src="static/img/elektronisches-studio-basel.svg", alt="Logo Elektronisches Studio Basel").logofooter.logofooterlang
+                    a(href="https://radiox.ch/",target="_blank",title="Radio X")
+                        img.logoNoPadding(src="static/img/radio-x.svg", alt="Logo Radio X").logofooter  
+                    a(href="https://derivative.ca/",target="_blank",title="Touchdesigner")
+                        img(src="static/img/touchdesigner.svg", alt="Logo Touchdesigner").logofooter  
                         br
+
+                    span=medienpartner
+                        br
+                    a(href="https://radiox.ch/",target="_blank",title="Radio X")
+                        img(src="static/img/radio-x.svg", alt="Logo Radio X").logofooter   
+                    a(href="https://basellive.ch",target="_blank",title="Radio X")
+                        img(src="static/img/basel-live.svg", alt="Basel Live").logofooter   
+                    a(href="https://www.filmexplorer.ch/",target="_blank",title="Film Explorer")
+                        img(src="static/img/filmexplorer.png", alt="Film Explorer").logofooter.logofooterlang
+                        br
+
+
                     span=hostingparter
                         br
-                    a(href="https://kunsthausbaselland.ch/",target="_blank")
-                        img.logolong(src="static/img/kunsthaus-baselland.svg")                        
-                    a(href="https://www.herzogdemeuron.com/",target="_blank")
-                        img.logolong(src="static/img/herzogdemeuron.svg")   
+                    a(href="https://kunsthausbaselland.ch/",target="_blank",title="Kunsthaus Baselland")
+                        img.logoNoPadding(src="static/img/kunsthaus-baselland.svg", alt="Logo Kunsthaus Baselland").logofooter.logofooterlang  
+        
+                    a(href="https://ateliermondial.com/",target="_blank",title="Atelier Mondial")
+                        img.logoNoPadding(src="static/img/AMLOGO_Size0_BLACK_Outline.svg",loading="lazy", alt="Logo Atelier Mondial").logofooter.logofootersquare 
+                    a(href="https://kabinett.com/",target="_blank", title="Kabinett")
+                        img.logoNoPadding(src="static/img/KABINETT_LOGO_V-1.svg",loading="lazy", alt="Logo Kabinett").logofooter.logofootersquare 
+                    a(href="https://www.herzogdemeuron.com/",target="_blank",title="Herzog&DeMeuron")
+                        img.logoNoPadding(src="static/img/herzogdemeuron.svg", alt="Logo Herzog&DeMeuron").logofooter.logofooterlang
+                    a(href="https://www.sfgbasel.ch/",target="_blank",title="SFG")
+                        img.logoNoPadding(src="static/img/sfg_zentriert.svg",loading="lazy", alt="Logo SFG").logofooter.logofootersquare                                 
+                    a(href="https://civic.hgk.fhnw.ch/",target="_blank",title="Civic")
+                        img.logoNoPadding(src="static/img/CIVIC-LOGO-WHITE.png",loading="lazy", alt="Logo Civic").logofooter
+                    a(href="https://fluxdock.io",target="_blank",title="Fluxdock")
+                        img(src="static/img/fluxdock.svg",loading="lazy", alt="Logo Fluxdock").logofooter
+
+
                         br
                     .imprint !{imprintContent.replace(/\n/g, "<br />")}
 
                     .credits
                         div
                             u.
-                                Video sources
-                        div.
-                            Under Creative Commons license:<br>
-                        a(href="https://youtube.com/watch?v=AsnLmKC5phw",target="_blank").
-                            MN2020: Urban Farming Sprouts Youth Development: <br>youtube.com/watch?v=AsnLmKC5phw<br>
-                        a(href="https://youtube.com/watch?v=9kq-DlBxVIM",target="_blank").
-                            Vertical farming on a rooftop in Paris, France: <br>youtube.com/watch?v=9kq-DlBxVIM<br>
-                        a(href="https://youtube.com/watch?v=srzpwrqWtPg",target="_blank").
-                            5 Innovative Vertical Farming Equipment | Future of Farming: <br>youtube.com/watch?v=srzpwrqWtPg<br>
-                        a(href="https://media.ccc.de/v/rc3-11416-biohacking_in_art",target="_blank").
-                            Biohacking in art: <br>media.ccc.de/v/rc3-11416-biohacking_in_art<br>
+                                Video credits
                         
-                        a(href="https://www.youtube.com/watch?v=m_WxQaQ1ZPM",target="_blank").
-                            iPhone Lidar Architectural Survey to Archicad:<br>
-                            youtube.com/watch?v=m_WxQaQ1ZPM<br>
-                        a(href="https://www.youtube.com/watch?v=J7KnKypGTyQ",target="_blank").
-                            3d floorplan animation:<br>
-                            youtube.com/watch?v=J7KnKypGTyQ<br>
-                        a(href="https://www.youtube.com/watch?v=G6lig2Xkrqs",target="_blank").
-                            10 Million Points:<br>
-                            youtube.com/watch?v=G6lig2Xkrqs<br>
-                        a(href="https://www.youtube.com/watch?v=NLcD8Ov8Jlw",target="_blank").
-                            Download Coloured LiDAR Point Clouds for the Netherlands AHN4 from GeoTiles.nl:<br>
-                            youtube.com/watch?v=NLcD8Ov8Jlw<br>
-                        a(href="https://www.youtube.com/watch?v=vZGdrZeVjKY",target="_blank").
-                            Vanuatu LiDAR data acquisition 3D flythrough video:<br>
-                            youtube.com/watch?v=vZGdrZeVjKY<br>
-                        a(href="https://www.youtube.com/watch?v=kwpj7ZUtnac",target="_blank").
-                            Render Point Clouds in Blender with Cycles (.ply):<br>
-                            youtube.com/watch?v=kwpj7ZUtnac<br>
-                        a(href="https://www.youtube.com/watch?v=a7dIojl-JlY",target="_blank").
-                            Occipital Sensor:<br>
-                            youtube.com/watch?v=a7dIojl-JlY<br>
-                        a(href="https://www.youtube.com/watch?v=BzP6vSFeqXE",target="_blank").
-                            Chillstep Dubstep Forest Mix:<br>
-                            youtube.com/watch?v=BzP6vSFeqXE<br>
-                        a(href="https://www.youtube.com/watch?v=NUU8nMs8mtQ",target="_blank").
-                            Top 5 LiDar Apps for iPhone 12/13/14 Pro!<br>
-                            youtube.com/watch?v=NUU8nMs8mtQ<br><br>
-
-                        div.
-                            By the courtesy of Mathias Lempart:
-                        a(href="https://www.mathiaslempart.com/",target="_blank").
-                            Hidden In Ice, 2017
             
                     div.footer
                         a(href="static/html/datenschutz.html" target="_blank")=disclaimer

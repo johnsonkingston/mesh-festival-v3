@@ -565,14 +565,18 @@ label{
         padding-bottom: 5vw;  
         padding-top:$padding*2;
         margin-top:$padding;
+        vertical-align: middle;
         @media (orientation: portrait) {
             height: 6vw;     
             padding-bottom: 12vw;  
         }
     }
-    .logolong{
+    .logofooterlang{
         width: 13vw;
         height: auto;
+    }
+    .logofootersquare{
+        height: 4vw;
     }
     .logoNoPadding{
         padding-bottom: 0;
@@ -637,6 +641,9 @@ label{
             line-height: $lineHeight3*1.2*$scaleFactor*0.8;       
             padding-bottom: 20vw;
         }
+    }
+    .submit{
+        margin:0;
     }
 }
 .videoSubtitleWrap{
