@@ -1,2 +1,2 @@
 # mesh-festival-v3
-In between website 
+The in between website of meshfestival.ch
