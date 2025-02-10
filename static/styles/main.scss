@@ -182,7 +182,8 @@ ul.navigation{
         @media (orientation: portrait) {
             font-size: $fontSize1*2*$scaleFactor;
             line-height: $lineHeight1*$scaleFactor;
-            padding: $padding*3*$scaleFactor $padding*6*$scaleFactor $padding*3*$scaleFactor $padding*6*$scaleFactor;
+            padding:  3vw 6vw;
+           
             border-radius: $lineHeight1*3*$scaleFactor;      
             border: 1vw solid rgba(var(--color2));
     
@@ -339,7 +340,7 @@ hr{
 #status{
     position: fixed;
     z-index: 100;
-    bottom:$padding;
+    bottom:4vw;
     left:$padding;
     padding:0;
     @media (orientation: portrait) {
@@ -673,7 +674,7 @@ label{
      -2px 2px 0 #f00,
       2px 2px 0 #f00;
 }
-#lang, #insta, #opencall{
+#lang, #insta, #opencall,#unmute{
     position: fixed;
     right: $padding;
     top: $padding;
@@ -704,6 +705,23 @@ label{
 #insta, #opencall{
     right: auto;
     left: $padding;
+}
+#unmute{
+    right: auto;
+    left:$padding;
+    top:auto;
+    bottom: $padding;
+    padding: 0.4vw 0.8vw 0.4vw 0.8vw;
+    @media (orientation: portrait) {
+        bottom: 10vw;
+        padding: 2vw 4vw;
+    }
+    img{
+        width: 2vw;
+        @media (orientation: portrait) {
+            width: 2vw*$scaleFactor;
+        }
+    }
 }
 #opencall{
     top: $padding*6;

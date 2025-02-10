@@ -192,7 +192,7 @@ h2:hover, li:hover {
   .submit, input, #mc_embed_signup input {
     font-size: 7.5vw;
     line-height: 3.75vw;
-    padding: 6vw 12vw 6vw 12vw;
+    padding: 3vw 6vw;
     border-radius: 11.25vw;
     border: 1vw solid rgba(var(--color2));
   }
@@ -375,7 +375,7 @@ hr {
 #status {
   position: fixed;
   z-index: 100;
-  bottom: 0.8vw;
+  bottom: 4vw;
   left: 0.8vw;
   padding: 0;
 }
@@ -760,7 +760,7 @@ label {
   text-shadow: -2px -2px 0 #f00, 2px -2px 0 #f00, -2px 2px 0 #f00, 2px 2px 0 #f00;
 }
 
-#lang, #insta, #opencall {
+#lang, #insta, #opencall, #unmute {
   position: fixed;
   right: 0.8vw;
   top: 0.8vw;
@@ -775,7 +775,7 @@ label {
   z-index: 10;
 }
 @media (orientation: portrait) {
-  #lang, #insta, #opencall {
+  #lang, #insta, #opencall, #unmute {
     font-size: 5vw;
     line-height: 5.5vw;
     padding: 2vw;
@@ -795,6 +795,28 @@ label {
 #insta, #opencall {
   right: auto;
   left: 0.8vw;
+}
+
+#unmute {
+  right: auto;
+  left: 0.8vw;
+  top: auto;
+  bottom: 0.8vw;
+  padding: 0.4vw 0.8vw 0.4vw 0.8vw;
+}
+@media (orientation: portrait) {
+  #unmute {
+    bottom: 10vw;
+    padding: 2vw 4vw;
+  }
+}
+#unmute img {
+  width: 2vw;
+}
+@media (orientation: portrait) {
+  #unmute img {
+    width: 5vw;
+  }
 }
 
 #opencall {

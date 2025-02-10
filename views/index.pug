@@ -30,6 +30,8 @@ html(lang =lang)
         #insta
             a(href="https://instagram.com/meshfestival/",target="_blank").
                 @meshfestival
+        #unmute 
+            img(src="static/img/unmute.svg",onclick="unmute()")
         //#opencall
             a(href="#open").
                 Open Call
@@ -38,32 +40,30 @@ html(lang =lang)
 
         div.columnVideo.mobile
             h2=mobile
-            video.mobileVideo(data-src="static/videos/MESH-FESTIVAL-MOBILE.mp4",autoplay="true",loop="true",muted="true",playsinline="true",poster="static/img/mesh-Festival-videoCover.jpg")        
-        div.columnVideo.desktop
-            video.desktopVideo(data-src="static/videos/MESH-FESTIVAL.mp4",autoplay="true",loop="true",muted="true",playsinline="true",poster="static/img/mesh-festival-background.jpg") 
-        div.bubbles.bubblesLeft.desktop
+            video.mobileVideo(id="video",data-src="https://www.johnsonkingston.ch/MESH/meshfestival_theaftermovie.mp4",autoplay="true",loop="true",muted="true",playsinline="true",poster="static/img/mesh-Festival-videoCover.jpg")        
+        //div.bubbles.bubblesLeft.desktop
             .verticalSpace 
             video#bubbleLeftVideo.desktopVideo(data-src="static/videos/01-1-DE.mp4",autoplay="true",loop="true",muted="true",playsinline="true") 
-        div.bubbles.bubblesRight.desktop
+        //div.bubbles.bubblesRight.desktop
             .verticalSpace 
             video#bubbleRightVideo.desktopVideo(data-src="static/videos/02-1-DE.mp4",autoplay="true",loop="true",muted="true",playsinline="true") 
         div.columnBackground.desktop
 
         script.
             function videoLoad(){ 
-                if($(window).width()<$(window).height()){
-                    $('.desktop').css('display','none');
+                //if($(window).width()<$(window).height()){
+                    //$('.desktop').css('display','none');
                     $('.mobileVideo').attr('src',$('.mobileVideo').attr('data-src'));  
                     $('.mobileVideo').attr('id','mainVideo');  
 
-                }else{
-                    $('.mobile').css('display','none');
-                    $('.desktopVideo').each(function( index ) {
-                        $(this).attr('src',$(this).attr('data-src'));                 
-                    });
-                    $('.desktopVideo').first().attr('id','mainVideo');  
+                //- }else{
+                //-     $('.mobile').css('display','none');
+                //-     $('.desktopVideo').each(function( index ) {
+                //-         $(this).attr('src',$(this).attr('data-src'));                 
+                //-     });
+                //-     $('.desktopVideo').first().attr('id','mainVideo');  
 
-                }
+                //- }
             }
             videoLoad();
         div.column

@@ -108,13 +108,13 @@ socket.on('meetingSend', function(data){
 $(window).scroll(function() {
     var $height = $(window).scrollTop();
     if($height > 100) {
-            $('.bubblesRight').addClass('bubblesMove');
-            $('.videoSubtitleWrap').addClass('videoSubtitleWrapReduced');
+            //$('.bubblesRight').addClass('bubblesMove');
+            //$('.videoSubtitleWrap').addClass('videoSubtitleWrapReduced');
             $('.columnBackground').addClass('columnBackgroundMove');
             $('#lang').fadeOut();
         } else {
-            $('.bubblesRight').removeClass('bubblesMove');
-            $('.videoSubtitleWrap').removeClass('videoSubtitleWrapReduced');
+            //$('.bubblesRight').removeClass('bubblesMove');
+            //$('.videoSubtitleWrap').removeClass('videoSubtitleWrapReduced');
             $('.columnBackground').removeClass('columnBackgroundMove');
             $('#lang').fadeIn();
 
@@ -159,7 +159,18 @@ $(window).scroll(function(){
 });
 
 
+function unmute(){
+    if( $("#mainVideo").prop('muted') ){
+        $("#mainVideo").prop('muted', false);
+        $('#unmute img').attr('src','static/img/mute.svg');
+        console.log('video unmute');
+    }else{
+        $("#mainVideo").prop('muted', true);
+        $('#unmute img').attr('src','static/img/unmute.svg');
 
+        console.log('video mute');
+    }
+}
 
 //Subtitle function
 var subtitleCounter = 1;
@@ -223,7 +234,7 @@ function changeColors(){
     $('#bubbleLeftVideo').attr('src','static/videos/01-'+(currentColor+1)+'-'+lang+'.mp4')
     $('#bubbleRightVideo').attr('src','static/videos/02-'+(currentColor+1)+'-'+lang+'.mp4')
 
-    subtitleChange(colors[currentColor].subtitle);
+   // subtitleChange(colors[currentColor].subtitle);
 
     //console.log('change to: '+changeTime);
     currentColor++;
